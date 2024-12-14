@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header .header-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    color: blue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.grid-item p {
+    margin: 0;
+    color: #666;
+}
+
+.grid-item:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.sources-link a {
+    color: #444;
+    text-decoration: none;
+}
+
+.sources-link a:hover {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ddd;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .grid-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .grid-container {
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    .grid-item h3 {
+        font-size: 1em;
+    }
+}

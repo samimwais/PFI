@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB2Plus</title>
+    <link rel="stylesheet" href="css/kb2plus.css">
+</head>
+<body>
+    <header>
+        <h1>KB2Plus</h1>
+        <img src="images/clg.jpg" alt="Logo KB2Plus" class="header-logo">
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Index</a>
+            <a href="horaire.html">Horaire</a>
+            <a href="professions.html">Professions</a>
+            <a href="sujet.html">Sujet</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="kb2plus.html" class="active">KB2Plus</a>
+            <a href="sources.html">Sources</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://clg.qc.ca/">Mon Cégep</a>
+            <a href="https://github.com/samimwais">Mon GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Menu déroulant</h2>
+            <div class="dropdown">
+                <button class="dropdown-btn">Menu KB2Plus</button>
+                <div class="dropdown-content">
+                    <a href="#progress">Progression</a>
+                    <a href="#svg">Graphique SVG</a>
+                    <a href="#definition">Définition</a>
+                    <a href="#time">Date & Heure</a>
+                    <a href="#meter">Jauge</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress">
+            <h3>Progression</h3>
+            <p>Voici une barre de progression représentant l'accomplissement d'une tâche avec la balise "progress":</p>
+            <progress value="60" max="100">60%</progress>
+        </section>
+
+        <section id="svg">
+            <h3>Graphique SVG</h3>
+            <p>Un cercle dessiné à l'aide de la balise SVG :</p>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="yellow" />
+            </svg>
+        </section>
+
+        <section id="definition">
+            <h3>Définition</h3>
+            <p>Exemple d'utilisation de la balise "dt" pour définir un terme :</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Langage de balisage utilisé pour créer des pages Web.</dd>
+                <dt>CSS</dt>
+                <dd>Langage de style utilisé pour décrire la présentation d'un document HTML.</dd>
+            </dl>
+        </section>
+
+        <section id="time">
+            <h3>Date & Heure</h3>
+            <p>Exemple avec la balise "time" :</p>
+            <p>Dernière mise à jour : <time datetime="2024-12-13T14:30">13 décembre 2024, 14h30</time></p>
+        </section>
+
+        <section id="meter">
+            <h3>Jauge</h3>
+            <p>Exemple d'une jauge de mesure (balise "meter") :</p>
+            <meter value="0.8" min="0" max="1" optimum="0.9">80%</meter>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Samim Wais | Décembre 2024 | <a href="sources.html">Sources</a></p>
+    </footer>
+</body>
+</html>
